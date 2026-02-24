@@ -15,6 +15,7 @@ private:
 public:
 	SudokuCell();
 	SudokuCell(int n);
+	void toggle_fixed();
 	void write(int i);
 	int read() const;
 	bool is_fixed() const;
@@ -43,3 +44,6 @@ public:
 	void load_from_string(std::string s);
 	std::string export_board();
 };
+
+#include "SudokuCell.tpp"
+#include "Sudoku.tpp"
